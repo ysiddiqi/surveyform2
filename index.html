@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz /K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form 2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="centered">Training Evaluation</div>
+    </div>
+    <div class="middle">
+        <div class="column-layout">
+            <form action="/action_page.php" method="get" id="nameform">
+                <h2> Personal Information</h2>
+                <div class="column">
+                    <label for="name"> *Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Employee Name"><br><br>
+                    <label for="email">*Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email"><br><br>
+                </div>
+                <div class="column">
+                    <label for="number">Age: </label>
+                    <input type="number" id="number" min="1" max="120" placeholder="Enter Your age" required /> <br><br>
+                    <label for="contact"> *ID:</label>
+                    <input type="number" id="contact" name="contact" placeholder="Enter Contact No."><br><br>
+
+                </div>
+        </div>
+    </div>
+    </form>
+    <div class="container">
+        <div class="bottom">
+            <h2> Survey Questions</h2>
+            <label id="rolls"> Which training/course did you completed?</label>
+            <select id="dropdown" name="rolls" class="dropdown">
+                <option disabled values> select an option</option>
+                <option value="webdeveloper">
+                    Web Developer</option>
+                <option value="management">
+                    Management Refresh Course</option>
+                <option value="marketing">
+                    Marketing Fresh Ideas</option>
+                <option value="services">
+                    Customer Servicing</option>
+            </select>
+            <br>
+            <label id="satisfaction">Overall, How satisfied were you with this training?</label>
+            <br>
+            <input name="verysatisfied" value="1" type="radio" label class="option" <label> Very Satisfied </label>
+            <br>
+            <input name="satisfied" value="1" type="radio" label class="option" <label> Satisfied </label>
+            <br>
+            <input name="neutral" value="1" type="radio" label class="option" <label> Neutral </label>
+            <br>
+            <input name="unsatisfied" value="1" type="radio" label class="option" <label> Unsatisfied </label>
+            <br>
+            <label id="satisfaction">Have you attended this training before?</label>
+            <br>
+            <input name="button" value="1" type="radio" <label> Yes</label>
+            <br>
+            <input name="button" value="1" type="radio" <label> No</label>
+            <br>
+            <label id="check">Did you satisfied with the following? [check all applicable]</label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Training Vanue
+            </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Ease of registration
+            </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Date of training
+            </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Quality of
+            presenters </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Quality of food
+            </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Quality of
+            accommodations </label>
+            <br>
+            <input name="helpfulresource" value="1" type="checkbox" label class="resource1" <label> Registration fee
+            </label>
+            <br>
+
+            <br>
+            <label id="satisfaction">Would you recomend this training to others?</label>
+            <br>
+            <input name="verysatisfied" value="1" type="radio" label class="option" <label> Yes </label> <input
+                name="verysatisfied" value="1" type="radio" label class="option" <label> No </label>
+            <br>
+            <h3> Comments or Suggestions:</h3>
+
+            <label id="comments">Are there any final comments you would like to make? </label>
+            <br>
+
+            <textarea id="suggestions" class="input-field" name="suggestion"
+                placeholder="Enter your comment or suggestion here..."></textarea>
+            <br>
+            <button id="submit" type="submit"> Submit <i class="fa fa-paper-plane"></button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

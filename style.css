@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+  .container {
+    background-image: url('headerimg.jpg');
+    background-size: cover;
+   
+    height: 100vh;
+    width: 1300px;
+    position: relative;
+  }
+  .centered {
+    position: absolute;
+    top: 5%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+  }
+  
+  .middle {
+
+    background-color: #F1D8D3;
+     
+   }
+   .column-layout {
+      background-color: #F1D8D3;
+     max-width: 1200px;
+     display: flex;
+     height: 300px;
+     
+      
+   }
+   .column {
+     
+     float: left;
+     padding: 20px;
+     height: 300px;
+     
+      
+   }
+   #nameform {
+     text-align: center;
+     margin-top: 40px;
+     margin-left: 400px;
+   }
+   h2 {
+     text-align: center;
+   }
+   label {
+     font-size: 15px;
+   }
+   input {
+     padding: 5px;
+     border: 1px solid black;
+     border-radius: 8px;
+     width: 150px;
+   
+   }
+   .bottom {
+     background-color: #F1E791;
+     width: 1400px;
+     height: 1200px;
+     
+   }
+   label {
+     font-size: 20px;
+     margin-left: 40px;
+   }
+   #dropdown {
+     margin-left: 100px;
+     padding: 5px;
+     border: 2px solid black;
+     border-radius: 5px;
+   }
+   h3 {
+     text-align: center;
+   }
+   #comments {
+     font-size: 15px;
+     text-align: center;
+     margin: 10px 500px;
+   }
+   #suggestions {
+     height: 200px;
+     width: 520px;
+     margin: 10px 450px;
+     border-radius:25px;
+     border: solid;
+     text-align: center;
+     padding: 15px;
+     max-width: 100%;
+   }
+   
+   #submit {
+     margin-left: 565px;
+     width: 100px;
+     height: 50px;
+     color: black;
+     font-weight: bold;
+     max-width: 100%;
+   }
+   
